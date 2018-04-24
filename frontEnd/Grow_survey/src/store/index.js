@@ -31,7 +31,7 @@ const mutations = {
   setSurveys(state, payload) {
     state.surveys = payload.surveys
   },
-  setCharacters(stat, payload) {
+  setCharacters(state, payload) {
     state.characters = payload.characters
   }
 }
