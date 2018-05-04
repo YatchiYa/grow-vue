@@ -47,7 +47,7 @@ export default {
   background-image: url('../../../static/images/home-002.jpg');
   background-size: cover;
   background-attachment: fixed;
-  top: 300%;
+  top: 200%;
   width: 100%;
   height: 100%;
   border-bottom: 2px solid black;

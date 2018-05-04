@@ -42,12 +42,13 @@ export default {
 
 #second-sec{
   position: absolute;
+  display:none;
   overflow: hidden;
   background: url('../../../static/images/home-001.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  top: 200%;
+  top: 100%;
   width: 100%;
   height: 100%;
   border-bottom: 2px solid black;

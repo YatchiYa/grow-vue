@@ -93,7 +93,7 @@ export default {
 /*  close icon */
 .closeIcon{
   position: absolute;
-  right: 0;
+  right: 10%;
   top: 0.6%;
   cursor: pointer;
 }

@@ -44,7 +44,7 @@ export default {
   background-repeat: no-repeat;
   background: url('../../../static/images/home-7.png');
   background-size: 100% 100%;
-  top: 600%;
+  top: 500%;
   width: 100%;
   height: 50%;
   border-bottom: 2px solid black;  

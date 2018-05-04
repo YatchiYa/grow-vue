@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import first_sec from './first_sec.vue'
+
 export default {  
   name: 'enter_website',
   data() {
@@ -16,6 +18,13 @@ export default {
   methods: {
   	enterWebsite(){
   		// remove first part
+  		document.getElementById('enter-website-container').remove();
+
+  		// move first section to top and show second section which was previously hidden due to same position with first section
+  		document.getElementById('first-sec').style.top = "0px";
+  		document.getElementById('second-sec').style.display = "inline-block";
+
+  		// Append dragon
   		$("body").append('<a href="#" @click="ToTop"><img src="../../static/images/GoTop.gif" id="DragonTop"></a>');
 
   	}
