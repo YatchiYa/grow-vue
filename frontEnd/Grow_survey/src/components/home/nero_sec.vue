@@ -8,7 +8,7 @@
                 <h3>Your Turn !!</h3>
               </div>
               <div class="nero-desc">
-                You, as the player, become one of the first testers of this device. To test it out you need to go on journeys and collect as much dust as you can. If this experiment proves to be successful humanity will have a tool to train their dust weavers and bring all of them together to beat Eon back once and for all!
+                Become one of the first testers of Grow. Go on journeys and collect as much knowledge as you can. 
               </div>        
             </div>
             <!-- ********************The End Of the Nero section ************************ -->
@@ -44,7 +44,7 @@ export default {
   background-repeat: no-repeat;
   background: url('../../../static/images/home-7.png');
   background-size: 100% 100%;
-  top: 500%;
+  top: 600%;
   width: 100%;
   height: 50%;
   border-bottom: 2px solid black;  

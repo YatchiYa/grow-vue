@@ -55,7 +55,7 @@ export default {
   background: url('../../../static/images/home-bottom.png');
   background-size: cover;
   background-attachment: fixed;
-  top: 550%;
+  top: 650%;
   width: 100%;
   height: 60%;
 }

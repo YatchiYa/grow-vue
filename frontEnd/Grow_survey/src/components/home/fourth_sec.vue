@@ -8,11 +8,11 @@
               <img src="../../../static/images/footer-0-bar.png" class="bar-fourth">
               <!-- The small image in the middle of the section -->
               <!--<img src="../../../static/images/logo-sec.png" class="logo-sec">-->
-              <h2 class="middle-sec" >&emsp;Become more and more powerful, <br>&emsp;&emsp;&emsp;&emsp; conquer new lands <br>&emsp; &amp; co-create the world of Elyrion</h2>
+              <h2 class="middle-sec" >&emsp; Co-create the world of Elyrion</h2>
 
               <!-- The different boxes representing the tool boxes -->
               <div class="To-Do-list">
-                <h3 style="padding-top: 100px; color:green; font-size:25px; text-shadow: 0px 2px 46px green;"> Connect to your cluster and a growing community in your area  </h3>
+                <h3 style="padding-top: 100px; color:green; font-size:25px; text-shadow: 0px 2px 46px green;"> Connect to a growing community in your area  </h3>
             
                 <!--<div class="To-Do-List-desc">
                   Keep your tasks, lists and reminders in one place, always in-sync across all your devices
@@ -78,7 +78,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  top: 400%;
+  top: 500%;
   width: 100%;
   height: 100%;
   border-bottom: 1px solid black;

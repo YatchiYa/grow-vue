@@ -7,7 +7,7 @@
                 <h3>The framework behind Grow</h3>
               </div>
               <div class="eigth-desc" >
-                The framework behind Grow is a combination of positive psychology research, philosophy and game design. We combine these disciplines to you to reflect on the kind of person you want to become and then give you the tools to develop yourself in this direction.
+                The framework behind Grow is a combination of positive psychology research, philosophy and game design. We combine these disciplines to help you to reflect on the kind of person you want to become and then give you the tools to develop yourself towards that direction.
 
               </div>
               <img class="fifth-img-frame" src="../../../static/images/st.png">
@@ -45,7 +45,7 @@ export default {
   background-repeat: no-repeat;
   background: url('../../../static/images/home-003.jpg');
   background-size: 100% 100%;
-  top: 300%;
+  top: 400%;
   width: 100%;
   height: 100%;
   border-bottom: 2px solid black;

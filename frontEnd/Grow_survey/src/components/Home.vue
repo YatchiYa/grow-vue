@@ -1,8 +1,9 @@
 <template>
   <div id="app_home">
   	
-  		<a href="#" @click="ToTop"><img src="../../static/images/GoTop.gif" class="DragonTop"></a>
+  		
 
+    <enter_website></enter_website>
   	<first_sec> </first_sec>
   	<second_sec> </second_sec>
   	<third_sec> </third_sec>
@@ -25,6 +26,7 @@
 
 
 <script>
+import enter_website from './home/enter_website.vue'
 import first_sec from './home/first_sec.vue'
 import second_sec from './home/second_sec.vue'
 import third_sec from './home/third_sec.vue'
@@ -43,10 +45,9 @@ import undefined_sec from './home/undefined_sec.vue'
 
 export default {  
   name:'Home',
-  components: { first_sec, second_sec,third_sec, eigth_sec, fourth_sec, nero_sec, bottom_sec, feedback_sec, footer_sec, login_sec, signup_sec, undefined_sec },
+  components: { enter_website, first_sec, second_sec,third_sec, eigth_sec, fourth_sec, nero_sec, bottom_sec, feedback_sec, footer_sec, login_sec, signup_sec, undefined_sec },
   data() {
   	return {
-
   	}
   },
   methods: {
@@ -63,7 +64,7 @@ export default {
 <style>
 
 
-.DragonTop{
+#DragonTop{
   position: fixed;
   top: 89%;
   left: 94%;
@@ -71,6 +72,12 @@ export default {
   width: 80px;
   border-radius: 50px;
   cursor: pointer;
+}
+
+#scrollDown{
+  position:absolute;
+  left: 45%; 
+  top: 82%; 
 }
 
 </style>

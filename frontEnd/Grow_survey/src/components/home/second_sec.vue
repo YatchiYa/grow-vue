@@ -47,7 +47,7 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  top: 100%;
+  top: 200%;
   width: 100%;
   height: 100%;
   border-bottom: 2px solid black;

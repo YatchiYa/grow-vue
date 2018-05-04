@@ -7,7 +7,8 @@
                 <h3> Our vision ?  </h3>
               </div>
               <div class="third-desc">
-                  is to use games to increase the number of lives lived well. We want to achieve this by bringing people together, empowering them to have an open discussion and giving them the tools to make a change.  
+                  Using games to increase the number of lives lived well. 
+                  To achieve this we bring people together, empower them to have an open discussion and develop together with them the tools to make a change
               </div>
               <img class="third-img-frame" src="../../../static/images/st.png">
               <img class="third-img" src="../../../static/images/dust-society.png"><a href="#eigth-sec"><img src="../../../static/images/scroll.gif" class="scroll" style="left: 50%; top: 88%; position:absolute;"></a>
@@ -46,7 +47,7 @@ export default {
   background-image: url('../../../static/images/home-002.jpg');
   background-size: cover;
   background-attachment: fixed;
-  top: 200%;
+  top: 300%;
   width: 100%;
   height: 100%;
   border-bottom: 2px solid black;

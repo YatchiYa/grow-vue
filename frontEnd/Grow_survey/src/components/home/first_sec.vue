@@ -22,7 +22,6 @@
 
 
 		    		<!-- The different Logo images on the first section -->
-		    			<img src="../../../static/images/logo-testt.png" class="logo-test" >
 		    			<img src="../../../static/images/role-playing.png" class="role-playing" >
 		    			<a ><img src="../../../static/images/learn-more.png" class="learn-logo" ></a>
 		    			<a href="#bottom-sec"><img src="../../../static/images/for-Beta.png" class="for-beta" ></a>
@@ -64,8 +63,6 @@ export default {
 
 <style>
 
-
-
 /*   ----------------  First section  **************************** */
 #first-sec{
   position: absolute;
@@ -73,6 +70,7 @@ export default {
   background-image: url('../../../static/images/home-01.jpg'); 
   background-size: cover;
   background-attachment: fixed;
+  top:100%;
   width : 100%;
   height : 100%;
 }
@@ -188,16 +186,10 @@ a:hover{
   z-index: 1;
 }
 
-/* The logo Grow in Mid */
-.logo-test{
-  position: absolute;
-  top: 22%;
-  left: 40%;
-}
 /*  The role playing logo*/
 .role-playing{
   position: absolute;
-  top: 62%;
+  top: 68%;
   left: 0%;
   width: 50%;
 }
@@ -205,7 +197,7 @@ a:hover{
 .for-beta{
   position: absolute;
   width: 30%;
-  top: 75.5%;
+  top: 83.5%;
   left: 18%;
   border-radius: 10px;
   cursor: pointer;
@@ -229,7 +221,7 @@ a:hover{
 .learn-logo{
   position: absolute;
   width: 13%;
-  top: 75%;
+  top: 83%;
   left: 4%;
   border-radius: 15px;
   cursor: pointer;
