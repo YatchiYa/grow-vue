@@ -11,7 +11,7 @@
                   To achieve this we bring people together, empower them to have an open discussion and develop together with them the tools to make a change
               </div>
               <img class="third-img-frame" src="../../../static/images/st.png">
-              <img class="third-img" src="../../../static/images/dust-society.png"><a href="#eigth-sec"><img src="../../../static/images/scroll.gif" class="scroll" style="left: 50%; top: 88%; position:absolute;"></a>
+              <img class="third-img" src="../../../static/images/example-journey.png"><a href="#eigth-sec"><img src="../../../static/images/scroll.gif" class="scrollDown"></a>
             </div>
             <!-- ******************** End Of The Third Section  ************************ -->
 
@@ -47,7 +47,7 @@ export default {
   background-image: url('../../../static/images/home-002.jpg');
   background-size: cover;
   background-attachment: fixed;
-  top: 200%;
+  top: 100%;
   width: 100%;
   height: 100%;
   border-bottom: 2px solid black;

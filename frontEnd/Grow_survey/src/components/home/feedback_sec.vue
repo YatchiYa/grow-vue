@@ -38,7 +38,7 @@ export default {
   methods: {
     hideFeedbacks: function() {
       $('#footer-sec').css({
-      'top':'610%'
+      'top':'510%'
     });
     $('#feedback_sec').hide(400);
     }
@@ -59,7 +59,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  top: 610%;
+  top: 510%;
   width: 100%;
   height: 80%;
   border-top: 1px solid black;

@@ -1,6 +1,6 @@
 <template>
  <div id="enter-website-container">
- 	<a href="#first-sec" @click="enterWebsite"><img src="../../../static/images/scroll.gif" id="scrollDown"></a>
+ 	<a href="#first-sec" @click="enterWebsite"><img src="../../../static/images/scroll.gif" class="scrollDown"></a>
  </div>			
   	
 </template>
@@ -22,11 +22,13 @@ export default {
 
   		// move first section to top and show second section which was previously hidden due to same position with first section
   		document.getElementById('first-sec').style.top = "0px";
-  		document.getElementById('second-sec').style.display = "inline-block";
+  		
+  		// second section currently disabled
+  		// document.getElementById('second-sec').style.display = "inline-block"; 
 
   		// Append dragon
   		$("body").append('<a href="#" @click="ToTop"><img src="../../static/images/GoTop.gif" id="DragonTop"></a>');
-
+  		
   	}
    }
 

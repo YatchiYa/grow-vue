@@ -35,7 +35,7 @@ export default {
     showFeedbacks: function() {
       $('#feedback_sec').show(400);
       $('#footer-sec').css({
-      'top':'690%'
+      'top':'590%'
     });
     }
   }
@@ -55,7 +55,7 @@ export default {
   background: url('../../../static/images/home-bottom.png');
   background-size: cover;
   background-attachment: fixed;
-  top: 550%;
+  top: 450%;
   width: 100%;
   height: 60%;
 }

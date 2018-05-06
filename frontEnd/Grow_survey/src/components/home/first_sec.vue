@@ -25,7 +25,7 @@
 		    			<img src="../../../static/images/role-playing.png" class="role-playing" >
 		    			<a ><img src="../../../static/images/learn-more.png" class="learn-logo" ></a>
 		    			<a href="#bottom-sec"><img src="../../../static/images/for-Beta.png" class="for-beta" ></a>
-		    			<a href="#second-sec" @click="scroll"><img src="../../../static/images/scroll.gif" class="scroll" style="left: 50%; top: 87%; position:absolute"></a>
+		    			<a href="#third-sec" @click="scroll"><img src="../../../static/images/scroll.gif" class="scrollDown"></a>
 	    			</div>
 	    			<!-- ******************* End Of The First section *********************-->
 
@@ -202,10 +202,7 @@ a:hover{
   border-radius: 10px;
   cursor: pointer;
 }
-/* a small Arrow aside to reach the Top of page */
-.scrollTop{
-  display: none;
-}
+
 .textToTop{
   position: fixed;
   top: 84.5%;

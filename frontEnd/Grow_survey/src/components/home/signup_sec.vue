@@ -92,9 +92,9 @@ export default {
 
 /*  close icon */
 .closeIcon{
-  position: absolute;
-  right: 10%;
-  top: 0.6%;
+  position: relative;
+  right: 2.4% !important;
+  top: 2% !important;
   cursor: pointer;
 }
 

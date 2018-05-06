@@ -1,7 +1,7 @@
 <template>
         
 
-            <!-- ********************* Second Section ******************* -->
+            <!-- ********************* Second Section (CURRENTLY NOT DISPLAYED) ******************* -->
             <div id="second-sec">
               <div class="secondo-title-1" >
                 Be Ready !!
@@ -15,7 +15,7 @@
               <div class="secondo-title-4" >
                 
               </div>
-              <a href="#third-sec"><img src="../../../static/images/scroll.gif" class="scroll" style="left: 50%; top: 87%; position:absolute;"></a>
+              <a href="#third-sec"><img src="../../../static/images/scroll.gif" class="scrollDown"></a>
             </div>
             <!--******************** End Of The Second Section *******************-->
 

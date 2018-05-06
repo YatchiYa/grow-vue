@@ -84,13 +84,7 @@ export default {
   display:none;
 }
 
-/*  close icon */
-.closeIcon{
-  position: absolute;
-  right: 0;
-  top: 0.6%;
-  cursor: pointer;
-}
+/* find close icon in signup_sec */
 
 .logo-login{
   position: relative;
