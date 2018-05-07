@@ -24,11 +24,7 @@ export default {
   		document.getElementById('first-sec').style.top = "0px";
   		
   		// second section currently disabled
-  		// document.getElementById('second-sec').style.display = "inline-block"; 
-
-  		// Append dragon
-  		$("body").append('<a href="#" @click="ToTop"><img src="../../static/images/GoTop.gif" id="DragonTop"></a>');
-  		
+  		// document.getElementById('second-sec').style.display = "inline-block"; 		
   	}
    }
 
@@ -40,7 +36,7 @@ export default {
 #enter-website-container{
   position: absolute;
   overflow: hidden;
-  background-image: url('../../../static/images/grow-logo.jpg'); 
+  background-image: url('../../../static/images/grow-play.jpg'); 
   background-size: cover;
   background-attachment: fixed;
   background-position: center;

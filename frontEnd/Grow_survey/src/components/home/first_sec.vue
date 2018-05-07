@@ -23,9 +23,9 @@
 
 		    		<!-- The different Logo images on the first section -->
 		    			<img src="../../../static/images/role-playing.png" class="role-playing" >
-		    			<a ><img src="../../../static/images/learn-more.png" class="learn-logo" ></a>
-		    			<a href="#bottom-sec"><img src="../../../static/images/for-Beta.png" class="for-beta" ></a>
-		    			<a href="#third-sec" @click="scroll"><img src="../../../static/images/scroll.gif" class="scrollDown"></a>
+		    			<!-- <a ><img src="../../../static/images/learn-more.png" class="learn-logo" ></a>
+		    			<a href="#bottom-sec"><img src="../../../static/images/for-Beta.png" class="for-beta" ></a> -->
+		    			<a href="#third-sec" @click="addDragon(); scroll();"><img src="../../../static/images/scroll.gif" class="scrollDown"></a>
 	    			</div>
 	    			<!-- ******************* End Of The First section *********************-->
 
@@ -53,6 +53,9 @@ export default {
     showsocialmodal: function(){
       $('#social-PopUp').fadeIn();
       $('#social-PopUp-main').show();    
+    },
+    addDragon(){
+      $("body").append('<a href="#" @click="ToTop"><img src="../../static/images/GoTop.gif" id="DragonTop"></a>');
     }
 
   }
@@ -62,7 +65,6 @@ export default {
 
 
 <style>
-
 /*   ----------------  First section  **************************** */
 #first-sec{
   position: absolute;
@@ -189,9 +191,10 @@ a:hover{
 /*  The role playing logo*/
 .role-playing{
   position: absolute;
-  top: 68%;
-  left: 0%;
-  width: 50%;
+    top: 65%;
+    left: 24%;
+    width: 60%;
+    height: 20%
 }
 /*  The small sign up for Beta logo */
 .for-beta{
