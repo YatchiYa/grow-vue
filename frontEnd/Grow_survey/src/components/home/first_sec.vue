@@ -11,7 +11,7 @@
 		    					<li class="request_demo" @click="showsocialmodal"> Social Media</li>
 		    					<li id="login_signup">
 		    						<div class="login-signup">
-				    					<span class="login" @click="showlogin"> Login </span>
+				    					<span class="login" @click="showlogin"> Login lalalalal </span>
 				    					<span> / </span>
 				    					<span class="signup" @click="showsignup"> SignUp </span>
 				    				</div>	
