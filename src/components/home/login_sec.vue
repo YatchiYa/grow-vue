@@ -10,13 +10,13 @@
                       <img src="../../../static/images/login.png" class="logo-login">
 
                       <form method=POST style="text-align:center; padding-top:10%;">
-                        <label for="username">Username</label>
-                                  <input type="text" class="control-user" name="username" placeholder="Username" style="margin-left:10px;">
-                                    <br>
-                                  <label for="pass">Password </label>
-                                  <input type="password" class="control-pass" name="pass" placeholder="Password" style="margin-left:13px;">
-                                    <br>
-                                <button type="submit" class="btn-submit" style="margin-top:20px;">Log In</button>
+                         <label for="email">Email</label>
+                          <input v-model="email" type="text" class="control-user" name="email" placeholder="email" style="margin-left:40px;">
+                            <br>
+                          <label for="pass">Password </label>
+                          <input v-model="password" type="password" class="control-pass" name="pass" placeholder="Password" style="margin-left:13px;">
+                            <br>
+                        <button @click.prevent='login' class="btn-submit" style="margin-top:20px;">Log In</button>
                       </form>
 
                     </div>
@@ -29,18 +29,33 @@
 
 
 <script>
+
+import Firebase from 'firebase'
+import swal from 'sweetalert'
+
 export default {  
   name: 'login_sec',
   data() {
     return {
-      
+      email : '',
+      password : ''
     }
   },
   methods: {
     hideLogin: function(){
       $('#login-PopUp').fadeOut();
       $('#login-PopUp-main').fadeOut();
-    }
+    },
+  login: function () {
+      Firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
+        (user) => {
+          this.$router.replace('Main');
+        },
+        (error) => {
+          swal(' opps '+ error.message)
+        }
+      );
+  }
   }
 }
 </script>

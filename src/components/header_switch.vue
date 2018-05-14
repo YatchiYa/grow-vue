@@ -1,24 +1,6 @@
 <template>
   <div>
 
-    <div id="ShowRoom">
-      <img class="showroom" src="../../static/images/showroom.png" alt="show Room" /><br/>
-      <label> Show Room </label>
-    </div>
-
-    <div id="Skills">
-      <img class="skills" src="../../static/images/Sk.png" alt="show Room" /><br/>
-      <label> Skills Path </label>
-    </div>
-
-
-    <div id="Setting">
-      <img class="setting" src="../../static/images/setting.png" alt="show Room" /><br/>
-      <label> Setting </label>
-    </div>
-
-
-
 
   </div>
 </template>

@@ -9,20 +9,20 @@
                       <img src="../../../static/images/signup-ico.gif" class="logo-login-ico">
                       <img src="../../../static/images/signUp.png" class="logo-login">
 
-                      <form method=POST style="text-align:center; padding-top:5%;">
+                      <form style="text-align:center; padding-top:5%;">
                                <label for="username">Username</label>
                                   <input type="text" class="control-user" name="username" placeholder="Username" style="margin-left:10px;">
                                     <br>
                                   <label for="Email">E-mail</label>
-                                  <input type="email" class="control-user" name="Email" placeholder="E-mail" style="margin-left:35px;">
+                                  <input v-model="email" type="email" class="control-user" name="Email" placeholder="E-mail" style="margin-left:35px;">
                                     <br>
                                   <label for="pass">Password </label>
-                                  <input type="password" class="control-pass" name="pass" placeholder="Password" style="margin-left:13px;">
+                                  <input v-model="password" type="password" class="control-pass" name="pass" placeholder="Password" style="margin-left:13px;">
                                     <br>
                                   <label for="pass"> Key </label>
                                   <input type="text" class="control-pass" name="Key" placeholder="Beta-Key" style="margin-left:52px;">
                                     <br>
-                                <button type="submit" class="btn-register" style="margin-top:20px;">Register</button>
+                                <button @click.prevent='signUp' class="btn-register" style="margin-top:20px;">Register</button>
                             </form>
 
 
@@ -36,17 +36,34 @@
 
 
 <script>
+import Firebase from 'firebase'
+import swal from 'sweetalert'
+
 export default {  
   name: 'signup_sec',
   data() {
     return {
-      
+      username : '',
+      email: '',
+      password: ''
     }
   },
   methods: {
     hidesignUp: function(){
       $('#signUp-PopUp').fadeOut();
       $('#signUp-PopUp-main').fadeOut();
+    },
+    signUp: function() {
+      Firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+        .then(
+          (user) => {
+            swal('this count has been created ');
+            this.$router.replace('Main');
+          },
+          (error) =>  {
+            swal('there is a probleme while creatng yout acount sorry' + error.message)
+          }
+        );
     }
   }
 }

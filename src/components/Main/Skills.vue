@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="skills_sks">
         
 
         <header-skills class="header-list_s">
@@ -628,5 +628,14 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 }
 
 
+
+/* a small change to the nav bar in skills  */
+
+
+.skills_sks .nav{
+  flex-wrap: inherit;
+  overflow : auto;
+  width: 310px;
+}
 
 </style>

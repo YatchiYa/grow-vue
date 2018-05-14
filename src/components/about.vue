@@ -1,6 +1,6 @@
 <template>
         
-
+    <div id="ab">
                <div id="container-us">
                   <div class="ref-home">
                     <router-link :to="{ name: 'Home' }"> « Home </router-link>
@@ -11,12 +11,12 @@
 
                   <div class="desc">
                     Hum.....<br><br> 
-                    <strong>  Pascal : </strong> The Big Boss !! <br>soo Yeah... ! He is the one who's giving Orders and Food ! hahaha<br><br> <br> 
-                    <strong> Aurel : </strong> She is ... ? i forgot  *_* <br> Ah Yes, she is the French Teacher of The Boss ! so... :O &emsp; if she says, sit down like a small kity pet ! we are all YES !! :V <br><br> <br> 
+                    <strong>  Pascal : </strong> The Founder.<br><br> <br> 
+                    <strong> Aurel : </strong> The Web Designer. <br><br> <br> 
 
                     <strong> Vero, Mathieu, Pedro : </strong> the 3 Front Dev ! <br> <br>
-                    <strong>  Yatchi : </strong> still loading .... * error 404 not found * <br><br> <br> 
-                    <strong> Others ? </strong> it can be you .... :O <br> <br> 
+                    <strong>  Yatchi : </strong> The Other Dev ... <br><br> <br> 
+                    <strong> Others ? </strong>  <br> <br> 
 
                     we welcome you any time ! 24h/24 ! <br>
                     visit our page facebook : <a href="https://www.facebook.com/notes/grow-playground/where-grow-will-go-and-i-will-follow/131323230913619/">Grow</a>
@@ -24,7 +24,7 @@
                   </div>
 
                </div>
-
+    </div>
 </template>
 
 
@@ -41,6 +41,7 @@ export default {
 
 
 <style>
+
 
 #container-us{
       position: absolute;

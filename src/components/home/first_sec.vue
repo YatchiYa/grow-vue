@@ -5,10 +5,10 @@
 	    				<!-- *******   The Menu Bar on Top ************ -->
 		    			<nav class="topMenu">
 		    				<ul class="Menu">
-                  <li class="home"><router-link :to="{ name: 'Main' }"> Game </router-link></li>
+                  <li class="home" @click="info"><a href="https://drive.google.com/drive/folders/1q_2x6PVzJcoBKX1_nCjx7jh2RNja5KdB"> Game</a></li>
 		    					<li class="blog"><router-link :to="{ name: 'story' }"> Story </router-link></li>
 		    					<li class="about_us"><router-link :to="{ name: 'about' }"> About Us </router-link></li>
-		    					<li class="request_demo" @click="showsocialmodal"> Social Media</li>
+		    					<li class="request_demo"> <a href="https://www.facebook.com/GrowPlayground">Social Media </a></li>
 		    					<li id="login_signup">
 		    						<div class="login-signup">
 				    					<span class="login" @click="showlogin"> Login </span>
@@ -26,7 +26,7 @@
 		    			<img src="../../../static/images/role-playing.png" class="role-playing" >
 		    			<a ><img src="../../../static/images/learn-more.png" class="learn-logo" ></a>
 		    			<a href="#bottom-sec"><img src="../../../static/images/for-Beta.png" class="for-beta" ></a>
-		    			<a href="#second-sec" @click="scroll"><img src="../../../static/images/scroll.gif" class="scroll" style="left: 50%; top: 87%; position:absolute"></a>
+		    			<a href="#second-sec" @click="tosc"><img src="../../../static/images/scroll.gif" class="scroll" style="left: 50%; top: 87%; position:absolute"></a>
 	    			</div>
 	    			<!-- ******************* End Of The First section *********************-->
 
@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import swal from 'sweetalert'
+
 export default {  
   name: 'first_sec',
   data() {
@@ -54,6 +56,24 @@ export default {
     showsocialmodal: function(){
       $('#social-PopUp').fadeIn();
       $('#social-PopUp-main').show();    
+    },
+    info: function(){
+      swal(' You will be redirected to the Repository of the Game ');
+    },
+    tosc: function() {
+      /* Scrolling href */
+      $('a[href^="#"]').on('click', function(event) {
+
+          var target = $(this.getAttribute('href'));
+
+          if( target.length ) {
+              event.preventDefault();
+              $('html, body').stop().animate({
+                  scrollTop: target.offset().top
+              }, 1000);
+          }
+
+});
     }
 
   }
@@ -70,8 +90,8 @@ export default {
 #first-sec{
   position: absolute;
   overflow: hidden;
-  background-image: url('../../../static/images/home-01.jpg'); 
-  background-size: cover;
+  background-image: url('../../../static/images/fond3.jpg'); 
+  background-size: 100% 100%;
   background-attachment: fixed;
   width : 100%;
   height : 100%;

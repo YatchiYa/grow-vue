@@ -1,7 +1,7 @@
 <template>
   <div id="app_home">
   	
-  		<a href="#" @click="ToTop"><img src="../../static/images/GoTop.gif" class="DragonTop"></a>
+  		<a v-show="showToTop" href="#" @click="ToTop"><img src="../../static/images/GoTop.gif" class="DragonTop"></a>
 
   	<first_sec> </first_sec>
   	<second_sec> </second_sec>
@@ -17,7 +17,15 @@
     <login_sec> </login_sec>
     <signup_sec> </signup_sec>
     <undefined_sec> </undefined_sec>
-  	
+
+
+    
+  	<!-- 
+    <div id="window">
+        reading
+    </div>
+    -->
+
 
   </div>
 </template>
@@ -46,7 +54,7 @@ export default {
   components: { first_sec, second_sec,third_sec, eigth_sec, fourth_sec, nero_sec, bottom_sec, feedback_sec, footer_sec, login_sec, signup_sec, undefined_sec },
   data() {
   	return {
-
+      showToTop: true
   	}
   },
   methods: {
@@ -54,6 +62,9 @@ export default {
       $('html, body').animate({scrollTop : 0},800);
        return false;
     }
+  },
+  computed: {
+  
   }
 }
 
@@ -73,4 +84,13 @@ export default {
   cursor: pointer;
 }
 
+
+#window{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: red;
+  z-index: 1000000;
+  color: green;
+}
 </style>

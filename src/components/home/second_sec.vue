@@ -10,7 +10,7 @@
                 Get Started !!
               </div>
               <div class="secondo-title-3" >
-                Change Your Life !!
+                & Make The Move
               </div>
               <div class="secondo-title-4" >
                 

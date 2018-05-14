@@ -43,7 +43,7 @@ export default {
 #footer-sec{
   position: absolute;
   overflow: hidden;
-  background: url('../../../static/images/footer-0.png');
+  background: url('../../../static/images/footer-0.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

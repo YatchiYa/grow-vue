@@ -7,9 +7,9 @@
                 Get The BETA Key
               </div>
               <div class="subscribe" >
-                <form method=POST > 
-                  <input type="Email" placeholder="Subscribe Your Email" title="Subscribe Your Email" name="Email" size=27 class="zone-text" >
-                </form>
+                
+                  <input v-model='email' @keyup.enter="showinfo" type="Email" placeholder="Subscribe Your Email" title="Subscribe Your Email" name="Email" size=27 class="zone-text" >
+                
               </div>
 
               <!-- feed back systeme -->
@@ -24,11 +24,15 @@
 
 
 <script>
+
+import swal from 'sweetalert'
+import Firebase from 'firebase'
+
 export default {  
   name: 'bottom_sec',
   data() {
     return {
-      
+      email: ''
     }
   },
   methods: {
@@ -37,6 +41,11 @@ export default {
       $('#footer-sec').css({
       'top':'690%'
     });
+    },
+    showinfo: function() {
+
+      swal(' an Email has been sent to your Email Adress !! ');
+
     }
   }
 }
@@ -52,7 +61,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background: url('../../../static/images/home-bottom.png');
+  background: url('../../../static/images/home-bottom.jpg');
   background-size: cover;
   background-attachment: fixed;
   top: 550%;
@@ -84,6 +93,6 @@ export default {
   left: 30%;
   font-size: 20px;
   text-align: center;
-  color: black;
+  color: #847692;
 }
 </style>

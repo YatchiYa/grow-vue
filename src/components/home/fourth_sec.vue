@@ -97,7 +97,7 @@ export default {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background: url('../../../static/images/home-bottom.png');
+  background: url('../../../static/images/home-bottom.jpg');
   background-size: cover;
   background-attachment: fixed;
   top: 550%;

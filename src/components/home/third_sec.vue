@@ -10,7 +10,7 @@
                   is to use games to increase the number of lives lived well. We want to achieve this by bringing people together, empowering them to have an open discussion and giving them the tools to make a change.  
               </div>
               <img class="third-img-frame" src="../../../static/images/st.png">
-              <img class="third-img" src="../../../static/images/dust-society.png"><a href="#eigth-sec"><img src="../../../static/images/scroll.gif" class="scroll" style="left: 50%; top: 88%; position:absolute;"></a>
+              <img class="third-img" src="../../../static/images/dust-society.jpg"><a href="#eigth-sec"><img src="../../../static/images/scroll.gif" class="scroll" style="left: 50%; top: 88%; position:absolute;"></a>
             </div>
             <!-- ******************** End Of The Third Section  ************************ -->
 

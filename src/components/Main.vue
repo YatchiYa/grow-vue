@@ -1,11 +1,13 @@
 <template>
   <div id="app_main">
   	 <!-- logout Button  -->
-  		<a class="logout"><img src="../../static/images/logout.png"></a>
+  		<label @click="signOut" class="logout"><img src="../../static/images/logout.png"></label>
+
+
       <!-- to start the animation background or not -->
       <label @click="canvasset" class="anime_screen" title="anime screen"> Screen </label>
       <!-- to show the header part -->
-      <label @click="showHeaderSwitch = !showHeaderSwitch" class="showHeader" title="showHeader"> Show </label>
+      <label @click="showHeaderSwitch = !showHeaderSwitch" class="showHeader" title="showHeader"> Config </label>
 
     <audio src="../../static/multimedia/audio/tokyo_ghoul.mp3" controls loop  style="z-index:100; position: absolute;width: 50px;border-radius: 60px;left: 96%; height: 20px;"></audio>
 
@@ -71,6 +73,9 @@ import RoomShow from './Main/RoomShow.vue'
 import header_switch from './header_switch.vue'
 import sidebar from './Main/sidebar.vue'
 
+
+import Firebase from 'firebase'
+
 export default {  
   name:'Main',
   components: { sidebar, header_switch, canvas, container, RoomShow },
@@ -84,6 +89,12 @@ export default {
     showHeaderS: function() {
       this.showHeaderSwitch = true
     },
+    signOut: function() {
+      Firebase.auth().signOut().then(() => {
+        this.$router.replace('/');
+      });
+    },
+    
     canvasset: function () {
       (function() {
 
@@ -231,6 +242,7 @@ export default {
 .logout{
   position: absolute;
   z-index: 10000;
+  cursor: pointer;
 }
 
 /* animating screen  */
